@@ -7,4 +7,4 @@ Features
 
 
 #live Demo
-[veiw Live]  (https://abblossom-png.github.io/mysite)
+[view Live]  (https://abblossom-png.github.io/mysite)
