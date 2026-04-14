@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrapcollapse</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-6 col-xl-6">
+                <h2>Bootstrap collapse</h2>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#democollapse">
+                        show/Hide content
+                </button>
+
+
+                <div class="collapse" id="democollapse">
+                    <div class="card card-body mt-3">
+                        This content is hidden by default. click the button again to hide it.
+                    </div>
+                </div>
+
+
+                <h2>Accordion</h2>
+                <div class="accordion" id="faqAccordion">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                             <button class="accordion-botton" type="button"
+                                data-bs-toggle="collaspe" data-bs-target="#q1">
+                                What is bootstrap 
+                             </button>
+                        </h2>
+                        <div class="accordion-botton-collapse show" id="q1"
+                             data-bs-parent="faqAccordion">
+                        </div>
+
+                        <div class="accordion-body">
+                         Bootstrap is a free front end framework for building
+                         responsive website
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-botton-collapse" type="button" 
+                        data-bs-toggle="collapse" data-bs-target="#q2">
+                        DO I NEED TO KNOW JAVASCRIPT</button>
+                    </h2>
+
+                    <div id="q2" class="accordion-collaspe collapse"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            No.Bootstrap handles most javascript for you.
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+                
+        
+            
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <h1>BOOTSRAP MODAL</h1>
+                    <button type="button" class="btn btn-primary"
+                        data-bs-toggle="modal" data-bs-target="#mymodal">
+                        Click if you want to open the modal
+                    </button>
+
+                    <div class="modal fade" id="mymodal" tabindex="-1" data-bs-dropdown="static">
+                        <div class="modal-dialog moadl modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 modal-title>modal-title</h5>
+                                    <button type="button" class="btn-close"
+                                         data-bs-dismis="modal">
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>This is a content of the modal. This is 
+                                        what is inside the modal</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" 
+                                        data-bs-dismss="modal">close
+                                    </button>
+                                        <button type="button" class="btn btn-danger">
+                                        Save changes
+                                        </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+        </div>
+
+    </div>
+    <script src="js/bootstrap.bundle.min"></script>
+    <script src= "js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+</html>

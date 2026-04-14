@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <form action="">
+                <div class="">
+                    <label for="name" class="form-label">Frist Name</label>
+                    <input type="name" name="fname" class="form-control" id="email"
+                     placeholder="Enter your first name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="pass" class="form-control w-75" 
+                     id="Password">
+                    <button type="submit" class="btn btn-primary">submit</button>
+                    </div>
+
+                    <h2>Bootstrap tooltip</h2>
+                    <button class="btn btn-primary me-3" data-bs-placement
+                    = "top"data-bs-toggle=tooltip title="save change">save</button>
+          </form>              
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+                col2
+           <form action="">
+            <input type="text" class="form-control" placeholder="Your name">
+            <input type="email" class="form-control">
+            <textarea name="form-control" rows="4"></textarea>
+
+            <select name="form-select" id="">
+                <option value="">select option</option>
+                <option value="">Another option</option>
+            </select>
+
+            <label for="" class="form-label">Fullname</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="" class="form-label">First Name</label>
+                    <input type="text" class="form-control" name="fname" id="">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="" class="form-label">Lastname</label>
+                    <input type="text" name="lname" class="form-control" id="">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="" class="form-label"> Lastname</label> 
+                    <input type="text" name="lname" class="form-control" id="">
+                    
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="username"
+                     name="" id="">
+
+                </div>
+             </div>
+
+             <div class="form-check">
+                <input type="checkbox" id="check1" class="form-check-input">
+                <label for="1" class="form-check-label" >Remember me</label>
+             </div>
+
+             <div class="form-check">
+                <input type="radio" name="gender" id="male" class="form-check-input">
+                <label  class="form-check-label" for="male">Male</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" placeholder="name@example" name="">
+                <label for="floatingEmail">Email Address</label>
+            </div>
+
+            <div>
+                <button class="btn btn-primary dropdown-toggle"
+                     type="button" data-bs-toggle="dropdown">
+                     Choose one of the options
+                </button>
+
+            <ul class="dropdown-menu">
+                <li><a href="#" dropdown-item>HTML</a></li>
+                <li><a href="#" dropdown-item>CSS</a></li>
+                <li><a href="#" dropdown-item>BOOTSRAP</a></li>
+                <li><a href="#" dropdown-item>PHP</a></li>
+                <li><a href="#" dropdown-item>JAVASCRIPT</a></li>
+                <li><a href="#" dropdown-item>LARAVEL</a></li>
+            </ul>
+            </div>
+            
+           </form>     
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    
+    
+    
+    
+    <script src="js/bootstrap.bundle.min"></script>
+    <script src= "js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript">
+        const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltips.forEach(tooltip => {new bootstrap.tooltip(tooltip);});
+    </script>
+    
+    
+</body>
+</html>
